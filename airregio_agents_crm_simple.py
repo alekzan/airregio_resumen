@@ -21,8 +21,8 @@ os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 llama_3_2 = "llama-3.2-90b-vision-preview"
 llama_3_1 = "llama-3.1-70b-versatile"
 gpt = "gpt-4o-mini"
-# llm = ChatOpenAI(model=gpt, temperature=0.2)
-llm = ChatGroq(model=llama_3_1, temperature=0.2)
+llm = ChatOpenAI(model=gpt, temperature=0.2)
+# llm = ChatGroq(model=llama_3_1, temperature=0.2)
 
 ############################## 1. Prepare data for CRM ##############################
 
