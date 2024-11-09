@@ -21,7 +21,35 @@ if "mostrar_formulario" not in st.session_state:
 
 # Área de texto para pegar la conversación
 conversation = st.text_area(
-    "Pegua aquí una conversación de WhatsApp o cadena de correo y el agente IA extraerá la información para subirla al CRM de tu empresa."
+    "Pega aquí una conversación de WhatsApp o cadena de correo y el agente IA extraerá la información para subirla al CRM de tu empresa.",
+    value="""[10:15 am, 26/10/2024] Fernanda: Hola, buenos días. Estoy interesada en impermeabilizar una plataforma industrial. ¿Podrían ayudarme con eso?
+
+[10:16 am, 26/10/2024] Asistente: ¡Hola, Fernanda! Buenos días. Claro que sí, en AIRREGIO tenemos amplia experiencia en la impermeabilización de plataformas industriales. ¿Podrías contarme un poco más sobre lo que necesitas?
+
+[10:17 am, 26/10/2024] Fernanda: Necesito una solución para una plataforma de aproximadamente 500 metros cuadrados. Con las lluvias recientes hemos notado algunas filtraciones.
+
+[10:18 am, 26/10/2024] Asistente: Entiendo, Fernanda. Podemos ofrecerte varios sistemas de impermeabilización que se adaptan a plataformas industriales, con opciones de rápida instalación y alta resistencia. ¿Podrías compartirnos el nombre de tu empresa y la dirección de la plataforma para tener un mejor contexto?
+
+[10:19 am, 26/10/2024] Fernanda: Claro, la empresa se llama Industrial García S.A. de C.V., y la plataforma está ubicada en Av. Las Torres 1234, Parque Industrial Monterrey, Monterrey, Nuevo León.
+
+[10:20 am, 26/10/2024] Asistente: ¡Perfecto, gracias! Para poder darte un presupuesto detallado y asesorarte mejor, ¿te gustaría que programáramos una visita técnica en la plataforma?
+
+[10:21 am, 26/10/2024] Fernanda: Sí, creo que sería lo mejor.
+
+[10:22 am, 26/10/2024] Asistente: Excelente. Para agendar la visita y enviarte la información completa, necesitaríamos algunos datos adicionales. ¿Podrías compartir tu número de teléfono y correo electrónico?
+
+[10:23 am, 26/10/2024] Fernanda: Claro, mi número es 81 1234 5678 y mi correo es fernanda.garcia@industrialgarcia.com.
+
+[10:24 am, 26/10/2024] Asistente: ¡Perfecto, Fernanda! Ya tenemos todo lo necesario. Vamos a agendar la visita en el mejor horario para ti. ¿Te parece bien el martes por la mañana?
+
+[10:25 am, 26/10/2024] Fernanda: Sí, el martes a las 10 am está perfecto.
+
+[10:26 am, 26/10/2024] Asistente: ¡Listo! Te agendamos la visita para el martes a las 10 am en Av. Las Torres 1234. Te enviaremos la confirmación y toda la información a tu correo. Si necesitas algo más, no dudes en contactarnos.
+
+[10:27 am, 26/10/2024] Fernanda: Gracias, quedo al pendiente del correo. ¡Nos vemos el martes!
+
+[10:28 am, 26/10/2024] Asistente: ¡Gracias a ti, Fernanda! Nos vemos el martes. Que tengas un excelente día.""",
+    height=500,  # Adjust the height as desired
 )
 
 # Botón para extraer información
