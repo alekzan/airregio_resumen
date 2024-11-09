@@ -9,7 +9,7 @@ from airregio_agents_crm_simple import (
     calificar_conversacion,
 )
 
-st.title("Extractor de Información de Chat")
+st.title("Extractor de Información de Chat para CRM")
 
 # Inicializar session_state si no existe
 if "datos" not in st.session_state:
@@ -20,7 +20,9 @@ if "mostrar_formulario" not in st.session_state:
     st.session_state["mostrar_formulario"] = False
 
 # Área de texto para pegar la conversación
-conversation = st.text_area("Pegue aquí la conversación de WhatsApp")
+conversation = st.text_area(
+    "Pegua aquí una conversación de WhatsApp o cadena de correo y el agente IA extraerá la información para subirla al CRM de tu empresa."
+)
 
 # Botón para extraer información
 if st.button("Extraer Información"):
